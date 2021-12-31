@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sketchware Pro</title>
+    <meta name="description" content="Make you own apps through Sketchware Pro">
+    <meta name="theme-color" content="#1976D3" />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://extremekrish.github.io/apps/sketchware-pro.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sketchware Pro">
+    <meta property="og:site_name" content="https://extremekrish.github.io/apps/sketchware-pro.html" />
+    <meta property="og:description" content="Make you own apps through Sketchware Pro">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/81916613?s=200&v=4">
+
+
+
+
+
+
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body::-webkit-scrollbar {
+    display: none;
+}
+body::-webkit-scrollbar-thumb {
+    display: none;
+}
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+nav{
+position:fixed;
+height:56px;
+width:100vw;
+background:#202125;
+top:0;
+left:0;
+box-shadow:0 -0px 5px rgba(0,0,0,.5);
+}
+@font-face {
+
+  font-family: 'Product';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(opensans_semibold.ttf);
+}
+@font-face {
+
+  font-family: 'OS Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(opensans_bold.ttf);
+}
+@font-face {
+
+  font-family: 'OS Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(opensans_regular.ttf);
+}
+body {
+background:#202125;
+font-family:Product;
+}
+.top{
+/*margin-top:56px;*/
+padding:5px 12px 6px 12px;
+display:flex;
+}
+.top img{
+background: linear-gradient(
+144deg,
+#4FA9FF 0.00%,
+#0886ff 100.00%
+);
+height:85px;
+width:85px;
+border-radius:10px;
+}
+.top .titlendev {
+color:white;
+font-size:22px;
+margin-left:18px;
+font-weight:400;
+}
+.top .titlendev a {
+font-size:13px;
+display:block;
+text-decoration:none;
+color:#1976D3;
+margin-top:2px;
+}
+.chipset {
+padding:23px 12px 4px 12px;
+font-size:10px;
+color:#bdbdbd;
+font-family:OS Regular;
+display:flex;
+overflow-x:scroll;
+white-space:nowrap;
+}
+.chipset::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+.chipset::-webkit-scrollbar-thumb {
+    background: transparent;
+display:none;
+}
+.chipset span{
+border:.1px solid #707072;
+border-radius:20px;
+padding:7px 8px;
+margin-right:8px;
+}
+.download-btn {
+margin:24px 12px 6px 12px;
+width:calc(100% - 24px);
+background:#1976D3;
+border:none;
+padding:12px 0;
+font-size:13px;
+color:white;
+font-family:OS Regular;
+border-radius:4px;
+outline:none;
+
+}
+.description {
+font-family:OS Regular;
+margin:10px 12px 6px 12px;
+border-radius:8px;
+border:1.5px solid #707072;
+background:#2C2D31;
+font-size:10px;
+color:#DEDEE0;
+padding:10px;
+}
+.read-more {
+color:#DEDEE0;
+font-size:16px;
+margin:16px 12px 16px 12px;
+font-weight:500;
+font-family:OS Bold;
+display:flex;
+}
+.screenshots {
+margin:16px 12px 0px 12px;
+overflow:scroll hidden;
+white-space:nowrap;
+}
+.screenshots img {
+height:280px;
+width:140px;
+background:white;
+border-radius:8px;
+margin-right:16px;
+object-fit: cover;
+}
+</style>
+</head>
+<body>
+<!--<nav>
+
+</nav>-->
+	<div class="top" >
+		<img src="https://avatars.githubusercontent.com/u/81916613?s=200&v=4" >
+		<span class="titlendev" >
+		Sketchware Pro
+		<a href="extremekrish.github.io" >Extreme_Krish</a>
+		</span>
+	</div>
+
+	<div class="chipset" >
+		<span style="background:#F5511E;color:white;border-color:#F5511E" >V6.4.0 Beta</span>
+		<span style="background:#2196f3;color:white;border-color:#2196f3" id="views" >0 views</span>
+		<span style="background:#4CAF50;color:white;border-color:#4CAF50" id="dl" >0 downloads</span>
+		<span>App Maker</span>
+		<span>Sketchware Mod</span>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+
+$.getJSON("https://api.countapi.xyz/hit/extremekrish.github.io/apps\sketchware-pro1", function(response) {
+    $("#views").text(response.value + " views");
+}); 
+$.getJSON("https://api.countapi.xyz/info/extremekrish.github.io-apps-sketchware-pro1/awesomeclick", function(response) {
+ $("#dl").text(response.value + " downloads");
+});
+
+</script>
+
+<script>
+function download(){
+window.open('https://github.com/Sketchware-Pro/Sketchware-Pro/releases/download/v6.4.0-beta.6/Sketchware.Pro.v6.4.0.Beta.6.apk')
+var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://api.countapi.xyz/hit/extremekrish.github.io-apps-sketchware-pro1/awesomeclick");
+    xhr.responseType = "json";
+    xhr.onload = function() {
+$.getJSON("https://api.countapi.xyz/info/extremekrish.github.io-apps-sketchware-pro1/awesomeclick", function(response) {
+ $("#dl").text(response.value + " downloads");
+});
+
+    }
+    xhr.send();
+}
+</script>
+	<button class="download-btn" onclick="download()" >Download App</button>
+	
+	<div class="description" >
+		Sketchware Pro v6.4.0 Beta 6<br>This is the beta version of Sketchware Pro<br><a style="color:#2196f3"  href="https://github.com/Sketchware-Pro/Sketchware-Pro/releases/tag/v6.4.0-beta.6" >https://github.com/Sketchware-Pro/Sketchware-Pro/releases/tag/v6.4.0-beta.6</a><br>.<br>.<br>Extreme Krish
+	</div>
+	
+	<div class="read-more" >
+		<span style="flex-grow:1;" >Read more</span><svg onclick="window.open('https://github.com/Sketchware-Pro/Sketchware-Pro/releases/tag/v6.4.0-beta.6')" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-arrow-right" width="26" height="26" fill="#9BA0A6" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
+	</div>
+	
+	<div class="screenshots" >
+		<img src="https://telegra.ph/file/70c16a2d50fb519ca92ca.jpg" >
+		<img src="https://telegra.ph/file/7db6062742fe72dd62ff6.jpg" >
+		<img src="https://telegra.ph/file/b56b62b872a35e8f1f005.jpg" >
+		<img src="https://telegra.ph/file/4a793f0953c754544444b.jpg" >
+	</div>
+
+<div class="store" ></div>
+</body>
+</html>
